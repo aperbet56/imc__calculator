@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcul de votre IMC</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="img/imc__logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calcul de votre IMC</h1>
+    </header>
+    <main>
+      <section class="container">
+        <h2>Calculatrice IMC</h2>
+        <div class="img__container">
+          <img src="img/imc__logo.jpg" alt="logo imc" />
+        </div>
+        <form action="">
+          <input
+            type="text"
+            class="height"
+            placeholder="Votre taille en CM"
+            required
+          />
+          <input
+            type="text"
+            class="weight"
+            placeholder="Votre poids en KG"
+            required
+          />
+          <input type="submit" value="Calculer" class="submit__form" />
+        </form>
+        <div class="popup">
+          <div class="imc__score"></div>
+          <div class="imc__text"></div>
+          <button class="btn__close">Fermer</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>Site créé par aperbet56</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
